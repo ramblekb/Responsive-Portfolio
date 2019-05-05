@@ -1,0 +1,640 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #4aaaa5
+  color: #777;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  margin: 0 auto;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  background-color: #4aaaa5;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  color: #fff;
+  margin: 0px;
+  padding: 25px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.float {
+  float: left;
+}
+
+hr {
+  margin: 0px;
+}
+
+.header {
+  width: 960px;
+  margin: auto;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: solid 5px #ccc;
+  height: 100px;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  list-style-type: none;
+  position: relative;
+  float: left;
+}
+
+nav a {
+  text-decoration: none;
+  color: #777;
+  padding: 10px 20px;
+  line-height: 50px;
+  transition: background-color ease .25s, color ease .25s;
+}
+
+nav a:hover {
+  color: #FFF;
+  background-color: #777;
+  transition: background-color ease .25s, color ease .25s;
+}
+
+.portfolio {
+  border-left: solid 1px lightgray;
+  border-right: solid 1px lightgray;
+}
+
+.contact {
+  padding-right: 0px;
+}
+
+nav {
+  float: right;
+  padding: 25px 0px;
+  height: 50px;
+}
+
+header h1 {
+  text-align: center;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+}
+
+h2 {
+  background-color: #fff;
+  color: #DE534B;
+  padding: 25px 0px;
+}
+
+section {
+  margin: auto;
+  background-color: #fff;
+  border-color: #ddd;
+  width: 910px;
+  padding: 0px 25px;
+  margin-top: 25px;
+}
+
+/* https://www.formget.com/css-hr/ */
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container {
+  padding: 25px 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+/* About Page */
+.bio-pic {
+  float: left;
+  padding-right: 25px;
+  padding-bottom: 25px;
+}
+
+.bio-link {
+  color: #4aaaa5;
+  text-decoration: none;
+  padding: 0px;
+  line-height: 0px;
+}
+
+.bio-link:hover {
+  background-color: white;
+}
+
+.bio {
+  line-height: 20px;
+}
+
+/* End About Page Styling */
+
+
+/* Portfolio Page */
+.portfolio {
+  height: 80%;
+}
+
+.portfolio-container {
+  padding-top: 25px;
+}
+
+.portfolio-item {
+  position: relative;
+  display: inline-block;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  border: solid 1px lightgrey;
+  height: 180px;
+}
+
+.portfolio-img {
+  max-width: 180px;
+}
+
+.portfolio-caption {
+  background-color: #4aaaa5;
+  color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 160px;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: background-color ease .1s, color ease .1s;
+}
+
+.portfolio-caption:hover {
+  color: #4aaaa5;
+  background-color: white;
+  transition: background-color ease .1s, color ease .1s;
+}
+/* End Portfolio Page Styling */
+
+
+/* Contact Page */
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 886px;
+}
+
+.label {
+  margin-bottom: 5px;
+}
+
+textarea {
+  margin-bottom: 20px;
+  width: 886px;
+  padding: 10px;
+  font-family: Arial;
+}
+
+button {
+  background-color: #4aaaa5;
+  padding: 10px 20px;
+  color: white;
+  font-size: 18px;
+  border: none;
+  margin-top: 10px;
+  border: solid 1px #4aaaa5;
+  transition: background-color ease .1s, color ease .1s;
+}
+
+button:hover {
+  background-color: #FFF;
+  color: #4aaaa5;
+  border: solid 1px #4aaaa5;
+  transition: background-color ease .1s, color ease .1s;
+}
+
+input::placeholder, textarea::placeholder {
+  color: lightgray;
+}
+/* End Contact Page Styling */
+
+footer {
+  background-color: #666;
+  color: #fff;
+  border-top: 8px solid #4aaaa5;
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* CSS-Tricks: Negative Margin 2 Example - https://css-tricks.com/couple-takes-sticky-footer/ */
+.content {
+  min-height: 100%;
+}
+
+.content-inside {
+padding-bottom: 75px;
+}
+
+.footer {
+height: 42px;
+margin-top: -50px;
+}
+
+/* BEGIN RESPONSIVE DESIGN CHANGES */
+/* Small Desktop View */
+@media screen and (min-width: 769px) and (max-width: 980px) {
+  
+  h2 {
+      padding: 1.5rem 0px;
+      font-size: 1.5rem;
+  }
+
+  header {
+      height: fit-content;
+  }
+
+  header h1 {
+      line-height: inherit;
+      height: inherit;
+      font-size: 1.5rem;
+      margin-left: 2rem;
+  }
+
+  .header {
+      width: 100%;
+  }
+
+  .header::after {
+      content: "";
+  display: block;
+      clear: both;
+  }
+
+  nav {
+      padding: 0rem;
+      height: fit-content;
+      margin-right: 2rem;
+  }
+
+  nav a {
+      line-height: 77px;
+      font-size: 1rem;
+      padding: .5rem 1rem;
+  }
+
+  ul::after {
+  content: "";
+  display: block;
+  clear: both;
+  }
+
+  section {
+      width: 60vw;
+      margin: 2rem;
+  }
+
+  .bio-pic {
+      width: 20%;
+      padding-right: 1rem;
+      padding-bottom: 1rem;
+  }
+
+  .bio {
+      line-height: 1.5rem;
+      font-size: .9rem;
+  }
+
+  .portfolio-container {
+      padding-top: 1rem;
+      text-align: justify;
+  }
+
+  .portfolio-item {
+      margin: 0;
+      display: inline-block;
+      width: 48%;
+      border: none;
+      height: initial;
+      margin-bottom: 1rem;
+      border: solid 1px lightgrey;
+  }
+
+  .portfolio-item a {
+      display: block;
+      width: 100%;
+      margin: auto;
+  }
+
+  .portfolio-img {
+      width: 100%;
+      max-width: initial;
+      margin: auto;
+      display: block;
+  }
+
+  .portfolio-caption {
+      width: 100%;
+      padding: 1rem 0;
+  }
+
+  .portfolio-container br {
+      display: none;
+  }
+
+  .label {
+      font-size: 1rem;
+  }
+
+  input {
+      width: -webkit-fill-available;
+      padding: .5rem;
+      margin-bottom: 1rem;
+  }
+
+  textarea {
+      width: -webkit-fill-available;
+      padding: .5rem;
+      margin-bottom: 0;
+  }
+
+  button {
+      font-size: 1rem;
+  }
+  
+  footer p {
+      font-size: x-small;
+  }
+
+}
+
+/* Tablet View */
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  
+  h2 {
+      padding: 1.5rem 0px;
+      font-size: 1.5rem;
+  }
+
+  header {
+      width: 100%;
+      height: auto;
+      height: fit-content;
+  }
+
+  .header {
+      width: 100%;
+      height: fit-content;
+  }
+
+  .header::after {
+      content: "";
+  display: block;
+      clear: both;
+  }
+
+  header h1 {
+      height: inherit;
+      line-height: inherit;
+      font-size: 1.5rem;
+      padding: 1.5rem;
+      margin-left: 1rem;
+  }
+
+  nav {
+      padding: 0rem;
+      height: fit-content;
+  }
+
+  nav a {
+      line-height: 75px;
+      font-size: small;
+      padding: .5rem 1rem;
+  }
+
+  ul::after {
+  content: "";
+  display: block;
+  clear: both;
+  }
+
+  section {
+      margin: auto 1rem;
+      width: auto;
+      padding: 0rem 1rem;
+      margin-top: 1rem;
+  }
+
+  .bio-pic {
+      padding-right: 1rem;
+      width: 30%;
+  }
+
+  .bio {
+      line-height: 1.5rem;
+      font-size: small;
+  }
+
+  .portfolio-container {
+      padding-top: 1rem;
+      text-align: justify;
+  }
+
+  .portfolio-item {
+      margin: 0;
+      display: inline-block;
+      width: 48%;
+      border: none;
+      height: initial;
+      margin-bottom: 1rem;
+      border: solid 1px lightgrey;
+  }
+
+  .portfolio-item a {
+      display: block;
+      width: 100%;
+      margin: auto;
+  }
+
+  .portfolio-img {
+      width: 100%;
+      max-width: initial;
+      margin: auto;
+      display: block;
+  }
+
+  .portfolio-caption {
+      width: 100%;
+      padding: 1rem 0;
+  }
+
+  .portfolio-container br {
+      display: none;
+  }
+
+  .label {
+      font-size: 1rem;
+  }
+
+  input {
+      width: -webkit-fill-available;
+      padding: .5rem;
+      margin-bottom: 1rem;
+  }
+
+  textarea {
+      width: -webkit-fill-available;
+      padding: .5rem;
+      margin-bottom: 0;
+  }
+  
+  button {
+      font-size: 1rem;
+  }
+
+  footer p {
+      font-size: x-small;
+  }
+
+}
+
+/* Smartphone View */
+@media screen and (max-width: 640px) {
+  
+  p {
+      font-size: small;
+  }
+
+  header {
+      position: static;
+      width: 100vw;
+      height: auto;
+  }
+
+  .header {
+      width: 100vw;
+  }
+
+  header h1 {
+      width: 100vw;
+      float: none;
+      height: inherit;
+      line-height: inherit;
+      font-size: 1.5rem;
+      padding: 1rem 0px;
+  }
+
+  nav {
+      float: none;
+      width: 100vw;
+      padding: 0px;
+      font-size: .8rem;
+  }
+
+  ul {
+      margin: auto;
+      width: fit-content;
+  }
+
+  section {
+      margin: auto 1rem;
+      width: auto;
+      padding: 0rem 1rem;
+      margin-top: 1rem;
+  }
+
+  .container {
+      padding: 1rem 0px;
+  }
+
+  h2 {
+      padding: 1rem 0px;
+  }
+
+  .bio-pic {
+      margin: auto;
+      display: block;
+      float: none;
+      padding-right: 0;
+      padding-bottom: 1rem;
+      width: 40%;
+  }
+
+  .portfolio-container {
+      padding-top: 1rem;
+      text-align: center;
+      padding-bottom: 1rem;
+  }
+
+  .portfolio-item {
+      margin-bottom: 1rem;
+      margin-right: 0;
+      height: initial;
+      border: none;
+      display: block;
+  }
+
+  .portfolio-item a {
+      display: block;
+      width: 50%;
+      margin: auto;
+  }
+
+  .portfolio-img {
+      max-width: initial;
+      width: 50%;
+      border: solid 1px lightgrey;
+      display: block;
+      margin: auto;
+  }
+
+  .portfolio-caption {
+      width: 50%;
+      padding: 1rem 0;
+  }
+
+  .portfolio-container br {
+      display: none;
+  }
+
+  .label {
+      font-size: 1rem;
+  }
+
+  input {
+      width: -webkit-fill-available;
+      padding: .5rem;
+      margin-bottom: 1rem;
+  }
+
+  textarea {
+      width: -webkit-fill-available;
+      padding: .5rem;
+      margin-bottom: 0;
+  }
+
+  button {
+      font-size: 1rem;
+  }
+
+  footer p {
+      font-size: x-small;
+  }
+
+  
+}
